@@ -5,7 +5,7 @@ FROM centos:centos7
 ENV JDK_VER 1.7.0
 ENV JDK_HEAP 1024M
 ENV JDK_STACK 1024M
-ENV MINECRAFT_VER 1.8
+ENV MINECRAFT_VER 1.8.1
 ENV MINECRAFT_JAR minecraft_server.${MINECRAFT_VER}.jar
 
 RUN yum install -y -q java-${JDK_VER}-openjdk-headless
