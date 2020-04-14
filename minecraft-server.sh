@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if ! [ -a /opt/minecraft/${MINECRAFT_JAR} ]; then
-  curl -L https://s3.amazonaws.com/Minecraft.Download/versions/${MINECRAFT_VER}/${MINECRAFT_JAR} -o $MINECRAFT_JAR
+  curl -L ${MINECRAFT_JAR_URL} -o $MINECRAFT_JAR
   chmod +x $MINECRAFT_JAR
 fi
 
